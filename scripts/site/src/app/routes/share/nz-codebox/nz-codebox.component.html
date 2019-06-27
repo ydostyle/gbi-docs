@@ -26,15 +26,15 @@
       <ng-content select="[intro]"></ng-content>
     </div>
     <div class="code-box-actions">
-      <i
-        [nzTitle]="'在 StackBlitz 上打开'"
-        nz-tooltip
-        nz-icon
-        nzType="thunderbolt"
-        nzTheme="fill"
-        class="code-box-code-copy"
-        (click)="openOnStackBlitz()"
-      ></i>
+      <!--<i-->
+        <!--[nzTitle]="'在 StackBlitz 上打开'"-->
+        <!--nz-tooltip-->
+        <!--nz-icon-->
+        <!--nzType="thunderbolt"-->
+        <!--nzTheme="fill"-->
+        <!--class="code-box-code-copy"-->
+        <!--(click)="openOnStackBlitz()"-->
+      <!--&gt;</i>-->
       <i
         [nzTitle]="'复制代码'"
         nz-tooltip
@@ -44,16 +44,16 @@
         [class.ant-tooltip-open]="copied"
         (click)="copyCode(nzRawCode)"
       ></i>
-      <i
-        [nzTitle]="'Copy Generate Command'"
-        *ngIf="nzGenerateCommand"
-        nz-tooltip
-        nz-icon
-        [nzType]="commandCopied ? 'check' : 'code'"
-        class="code-box-code-copy"
-        [class.ant-tooltip-open]="commandCopied"
-        (click)="copyGenerateCommand(nzGenerateCommand)"
-      ></i>
+      <!--<i-->
+        <!--[nzTitle]="'Copy Generate Command'"-->
+        <!--*ngIf="nzGenerateCommand"-->
+        <!--nz-tooltip-->
+        <!--nz-icon-->
+        <!--[nzType]="commandCopied ? 'check' : 'code'"-->
+        <!--class="code-box-code-copy"-->
+        <!--[class.ant-tooltip-open]="commandCopied"-->
+        <!--(click)="copyGenerateCommand(nzGenerateCommand)"-->
+      <!--&gt;</i>-->
       <span class="code-expand-icon" [nzTitle]="nzExpanded ? '收起代码' : '显示代码'" nz-tooltip (click)="nzExpanded = !nzExpanded">
         <img
           alt="expand code"
